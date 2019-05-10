@@ -15,7 +15,7 @@ vertical-align: middle;
 font-size:20px;
 }
 .neo-app {
-    background: url(/assets/imgs/backgrounds/10.png);
+    background: url(https://raw.githubusercontent.com/neolightning/NeoMaterial/master/assets/imgs/backgrounds/10.png);
         background-repeat: repeat-y;
     background-size: cover;
 }

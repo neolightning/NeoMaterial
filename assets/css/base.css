@@ -110,6 +110,10 @@ display:block;
 width:250px;
 }
 
+.active i.material-icons {
+    color: aqua;
+}
+
 .neo-app-side-menu li>.neo-app-menu-item {
 position:relative;
 display:table;

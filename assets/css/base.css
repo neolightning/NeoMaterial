@@ -39,7 +39,10 @@ font-size:20px;
 }
 .nav-logo-text{
   font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  margin-left: 12px;
+  color: white;
+  position: absolute;
+  margin-left: 48px;
+  margin-top: 20px;
 }
 .neo-app-header-search-bar {
   background: rgba(241,243,244,0.24);
@@ -111,7 +114,7 @@ width:250px;
 }
 
 .active i.material-icons {
-    color: aqua;
+    color: #FF5722;
 }
 
 .neo-app-side-menu li>.neo-app-menu-item {

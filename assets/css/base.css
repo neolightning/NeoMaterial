@@ -94,6 +94,11 @@ font-size:20px;
     .neo-app-side-menu>ul.logout {
         margin:0px 0 !important;
     }
+    .neo-app-header-search-bar {
+        display: none;
+         -webkit-transition:width .05s linear;
+        transition:width .05s linear;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -130,6 +135,11 @@ font-size:20px;
     }
     .neo-app-side-menu>ul.logout {
         margin:0px 0 !important;
+    }
+    .neo-app-header-search-bar {
+        display: none;
+         -webkit-transition:width .05s linear;
+        transition:width .05s linear;
     }
 }
 

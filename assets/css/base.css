@@ -1,0 +1,227 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+.neo-app-bar {
+  background: #FF5722;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.neo-app-bar-full {
+  height: 64px;
+}
+
+.nav-logo {
+  color: white;
+  margin-left: 12px;
+  margin-top: 18px;
+  text-decoration: none;
+  position: absolute;
+}
+.neo-app-header-icon {
+}
+.nav-logo-text{
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  margin-left: 12px;
+}
+.neo-app-header-search-bar {
+  background: rgba(241,243,244,0.24);
+    border: 1px solid transparent;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  max-width: 720px;
+  margin-left: 256px;
+  max-height: 48px;
+  margin-top: 8px;
+}
+
+.neo-app-header-search-bar-input{
+  background: transparent;
+  width: calc(100% - 11px);
+  height: 48px;
+  padding: 0 0 0 11px;
+  color: rgba(255,255,255,0.87);
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font: normal 16px Roboto,sans-serif;
+  outline: none;
+  border: none;
+  font-variant-ligatures: none;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.87);
+}
+
+.neo-app-shadow {
+  box-shadow: 0 -3px 8px 5px #3f3f3f;
+}
+
+.neo-app-side-menu:hover,nav.neo-app-side-menu.expanded {
+width:256px;
+overflow:visible;
+}
+
+.neo-app-side-menu {
+background:#3c4043;
+position:absolute;
+top:64px;
+bottom:0;
+height:calc(100% - 64px);
+left:0;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:0;
+}
+
+.neo-app-side-menu-compact {
+width:72px;  
+}
+
+.neo-app-side-menu-extended {
+  width: 256px;
+}
+
+.neo-app-side-menu>ul {
+margin:7px 0;
+}
+
+.neo-app-side-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.neo-app-side-menu li>.neo-app-menu-item {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:white;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+height: 32px;
+ border-radius: 0 16px 16px 0;
+}
+
+.neo-app-side-menu li.active a {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0 16px 16px 0;
+}
+
+.neo-app-side-menu .neo-app-nav-icon {
+position:relative;
+width:20px;
+height:20px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+margin-right: 32px;
+margin-left: 24px;
+top: 7px;
+}
+
+.neo-app-nav-icon-badge {
+  border-radius: 10px;
+  background: #FF5722;
+  min-width: 20px;
+  font-size: .75rem;
+  letter-spacing: .3px;
+  padding: 0 4px;
+  top: 0;
+  left: 32px;
+  position:absolute;
+  font-weight: normal;
+  line-height: 20px;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  z-index: 1;
+  text-align:center;
+}
+
+.neo-app-side-menu .neo-app-nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:184px;
+font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+text-shadow: 0 1px 2px rgba(0,0,0,.65);  
+}
+
+.neo-app-nav-text-right {
+  float: right;
+  letter-spacing: .3px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.65);
+  margin-right:  12px;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.neo-app-side-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.neo-app-side-menu li:hover>a {
+color:#fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0 16px 16px 0;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}

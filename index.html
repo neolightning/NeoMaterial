@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Neo Material Demo</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/base.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="neo-app">
+        <header class="neo-app-bar neo-app-bar-full neo-app-shadow"><a href="#" class="nav-logo nav-logo-with-icon"><i class="material-icons neo-app-header-icon">menu</i><span class="nav-logo-text">Neo Material</span></a>
+            <form class="neo-app-header-search-bar" method="get" role="search" id="neo-app-header-search-bar"><div><input class="neo-app-header-search-bar-input" aria-label="Search mail" autocomplete="off" placeholder="Search..." value="" name="q" type="text" dir="ltr" spellcheck="false" aria-haspopup="true" aria-live="off"></div></form>
+        </header>
+        <div class="area"></div><nav class="neo-app-side-menu neo-app-side-menu-compact neo-app-side-menu-extended">
+            <ul>
+                <li class="active">
+                    <a class="neo-app-menu-item" href="#">
+                        <i class="material-icons neo-app-nav-icon">home</i>
+                        <span class="neo-app-nav-text">Dashboard<span class="neo-app-nav-text-right">7</span></span>
+</a>
+</li>
+<li class="has-subnav">
+<a class="neo-app-menu-item" href="#">
+<span class="neo-app-nav-icon-badge">64</span>
+<i class="material-icons neo-app-nav-icon">computer</i>
+<span class="neo-app-nav-text">
+Feed
+<span class="neo-app-nav-text-right">64</span>
+</span>
+</a>
+</li>
+<li class="has-subnav">
+<a href="#" class="neo-app-menu-item">
+<i class="material-icons neo-app-nav-icon">list</i>
+<span class="neo-app-nav-icon-badge">1</span>
+<span class="neo-app-nav-text">
+Forms
+</span>
+</a>
+</li>
+<li class="has-subnav">
+<a href="#" class="neo-app-menu-item">
+<i class="material-icons neo-app-nav-icon">folder</i>
+<span class="neo-app-nav-text">
+Pages
+</span>
+</a>
+</li>
+</ul>
+<ul class="logout">
+<li>
+<a href="#" class="neo-app-menu-item">
+<i class="material-icons neo-app-nav-icon">power_settings_new</i>
+<span class="neo-app-nav-text">
+ Logout
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+<script>
+      $(document).scroll(function () {
+  if ($(window).scrollTop() === 0) {
+    $(".neo-app-bar").removeClass("neo-app-shadow");
+  } else {
+    $(".neo-app-bar").addClass("neo-app-shadow");
+  }
+});
+    </script>
+</html>

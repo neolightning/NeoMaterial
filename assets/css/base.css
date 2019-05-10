@@ -14,7 +14,11 @@ text-align: center;
 vertical-align: middle;
 font-size:20px;
 }
-
+.neo-app {
+    background: url(/assets/imgs/backgrounds/10.png);
+        background-repeat: repeat-y;
+    background-size: cover;
+}
 .neo-app-bar {
   background: #FF5722;
   width: 100%;
@@ -34,6 +38,8 @@ font-size:20px;
   margin-top: 18px;
   text-decoration: none;
   position: absolute;
+      margin-top: 18px;
+
 }
 .neo-app-header-icon {
 }
@@ -43,6 +49,7 @@ font-size:20px;
   position: absolute;
   margin-left: 48px;
   margin-top: 20px;
+    text-decoration: none;
 }
 .neo-app-header-search-bar {
   background: rgba(241,243,244,0.24);
@@ -78,12 +85,17 @@ input::placeholder {
 }
 
 .neo-app-side-menu:hover,nav.neo-app-side-menu.expanded {
-width:256px;
+width:280px;
 overflow:visible;
+    -webkit-box-shadow: 0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12);
+    background: #616161;
 }
-
+#neo_app_menu {
+    cursor: pointer;
+}
 .neo-app-side-menu {
-background:#3c4043;
+background:transparent;
 position:absolute;
 top:64px;
 bottom:0;
@@ -97,11 +109,13 @@ z-index:0;
 }
 
 .neo-app-side-menu-compact {
-width:72px;  
+width:72px;
+    -webkit-box-shadow: 0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12);
 }
 
 .neo-app-side-menu-extended {
-  width: 256px;
+  width: 280px;
 }
 
 .neo-app-side-menu>ul {
@@ -111,7 +125,7 @@ margin:7px 0;
 .neo-app-side-menu li {
 position:relative;
 display:block;
-width:250px;
+width:270px;
 }
 
 .active i.material-icons {
@@ -129,25 +143,25 @@ text-decoration:none;
 -webkit-transform:translateZ(0) scale(1,1);
 -webkit-transition:all .1s linear;
 transition:all .1s linear;
-height: 32px;
+height: 48px;
  border-radius: 0 16px 16px 0;
 }
 
 .neo-app-side-menu li.active a {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 0 16px 16px 0;
+  background: rgba(255, 87, 34, 0.25);
+  border-radius: 0 24px 24px 0;
 }
 
 .neo-app-side-menu .neo-app-nav-icon {
 position:relative;
-width:20px;
-height:20px;
+width:24px;
+height:24px;
 text-align:center;
 vertical-align:middle;
-font-size:18px;
+font-size:24px;
 margin-right: 32px;
 margin-left: 24px;
-top: 7px;
+top: 12px;
 }
 
 .neo-app-nav-icon-badge {
@@ -165,13 +179,14 @@ top: 7px;
   font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
   z-index: 1;
   text-align:center;
+    color: white;
 }
 
 .neo-app-side-menu .neo-app-nav-text {
 position:relative;
 display:table-cell;
 vertical-align:middle;
-width:184px;
+width:194px;
 font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 text-shadow: 0 1px 2px rgba(0,0,0,.65);  
 }
@@ -209,6 +224,10 @@ nav {
 -ms-user-select:none;
 -o-user-select:none;
 user-select:none;
+}
+
+nav ul {
+        padding: 24px 0 !important;
 }
 
 nav ul,nav li {
